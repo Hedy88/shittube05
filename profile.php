@@ -20,6 +20,7 @@ session_start();
                     }
                     ?>
                     <div style="padding: 0px 5px 0px 5px;">
+                    <?php include './templates/search.php'; ?>
                     <?php include './templates/profilemain.php'; ?>
                     <?php include './templates/footer.php'; ?>
                     </div>

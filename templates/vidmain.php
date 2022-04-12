@@ -1,6 +1,8 @@
 <?php 
 $id = htmlspecialchars($_GET['v']);
 $psql = mysqli_query($conn, "SELECT * FROM videos WHERE id = '$id'");
+$lastWatched = date('Y-m-d H:i:s');
+$p2sql = mysqli_query($conn, "UPDATE videos SET lastWatched = '$lastWatched' WHERE id = '$id'");
 $row = mysqli_fetch_assoc($psql);
 
 $title = htmlspecialchars($row['title']);

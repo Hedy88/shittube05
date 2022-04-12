@@ -12,8 +12,7 @@
 				<a href="#"><img src="./img/1contest.jpg" style="border: 5px solid #FFFFFF; margin-top: 10px;" width="80" height="60"></a>
 				
 				<div style="font-size: 16px; font-weight: bold; padding-top: 5px;"><a href="monthly_contest.php">Joke Tutorials</a></div>
-				<div style="font-size: 11px; padding: 10px 0px 5px 0px;">In celebration of shitTube launching, the shitTube team is proud to announce there 1st video contest.</div>
-				
+				<br>
 								
 				<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="signup.php">Join the contest now!</a></div>
 				

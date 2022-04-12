@@ -15,7 +15,7 @@ session_start();
                     <?php include './templates/header.php'; ?>
                     <div style="padding: 0px 5px 0px 5px;">
                     <?php include './templates/search.php'; ?>
-                    <?php include './templates/wnew.php'; ?>
+                    <?php include './templates/msgs.php'; ?>
                     <?php include './templates/footer.php'; ?>
                     </div>
                 </td>

@@ -14,6 +14,7 @@ session_start();
                 <td style="padding-bottom: 25px;" bgcolor="#FFFFFF">
                     <?php include './templates/header.php'; ?>
                     <div style="padding: 0px 5px 0px 5px;">
+                    <?php include './templates/search.php'; ?>
                     <?php include './templates/vidmain.php'; ?>
                     <?php include './templates/footer.php'; ?>
                     </div>

@@ -1,6 +1,15 @@
-<?php 
+<?php
+// load required libs 
 include './libs/config/config.php';
 include './libs/config/db_auth.php';
+
+// composer 
+require 'vendor/autoload.php';
+
+// composer dependencies
+use Carbon\Carbon;
+
+// start the session
 session_start();
 ?>
 <html>
@@ -13,8 +22,8 @@ session_start();
                 <tr>
                 <td style="padding-bottom: 25px;" bgcolor="#FFFFFF">
                     <?php include './templates/header.php'; ?>
-                    <div class="infoBox">welcome to shitTube's beta.</div>
                     <div style="padding: 0px 5px 0px 5px;">
+                    <?php include './templates/search.php'; ?>
                     <table width="790" cellspacing="0" cellpadding="0" border="0" align="center">
 	                    <tbody>
                             <tr valign="top">
@@ -22,6 +31,8 @@ session_start();
                                     <?php if (isset($_SESSION['username'])) {
                                         include './templates/home1loggedin.php';
                                     } else { include './templates/home1.php'; } ?> 
+                                    <br>
+                                    <?php include './templates/recently_viewed.php'; ?>
                                     <br>
                                     <?php include './templates/featuredvids.php'; ?>
                                 </td>

@@ -2,6 +2,9 @@
 include './libs/config/config.php';
 include './libs/config/db_auth.php';
 session_start();
+
+include './libs/auth/checksession.php';
+include './libs/uploader/uploader.php';
 ?>
 <html>
     <head>
@@ -15,7 +18,7 @@ session_start();
                     <?php include './templates/header.php'; ?>
                     <div style="padding: 0px 5px 0px 5px;">
                     <?php include './templates/search.php'; ?>
-                    <?php include './templates/wnew.php'; ?>
+                    <?php include './templates/api1.php'; ?>
                     <?php include './templates/footer.php'; ?>
                     </div>
                 </td>
