@@ -1,3 +1,6 @@
+<?php 
+use Carbon\Carbon;
+?>
 <div style="padding: 10px 0px 10px 0px;">
 		<table width="595" cellspacing="0" cellpadding="0" border="0" bgcolor="#EEEEDD" align="center">
 			<tbody><tr>
@@ -17,11 +20,12 @@
                  $recentsql = mysqli_query($conn, "SELECT * FROM videos ORDER BY `lastWatched` DESC LIMIT 5");
                  while ($row2 = mysqli_fetch_assoc($recentsql)) {
                     $id2 = $row2['id'];
+					$funnydate = Carbon::parse($row2['lastWatched'])->diffforhumans();
                  ?>
 						<td width="20%" align="center">
 		
 						<a href="video.php?v=<?php echo $id2; ?>"><img src="./thumbs.php?thumb=<?php echo $id2; ?>" style="border: 5px solid #FFFFFF; margin-top: 10px;" width="80" height="60"></a>
-						<!-- <div class="moduleFeaturedDetails" style="padding-top: 2px;"></div> -->
+						<div class="moduleFeaturedDetails" style="padding-top: 2px;"><?php echo $funnydate; ?></div> 
 		
 						</td>
                 <?php } ?>

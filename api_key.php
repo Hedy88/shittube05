@@ -4,7 +4,6 @@ include './libs/config/db_auth.php';
 session_start();
 
 include './libs/auth/checksession.php';
-include './libs/uploader/uploader.php';
 ?>
 <html>
     <head>

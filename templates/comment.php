@@ -3,7 +3,7 @@
 <div style="padding-bottom: 5px; font-weight: bold; color: #444;">Comment on this video:</div>
 <form name="comment_form" id="comment_form" method="post" action="./libs/comments/comment.php" target="invisible">
     <input type="hidden" name="video_id" value="<?php echo $id; ?>">
-    <textarea name="comment" cols="55" rows="3"></textarea>
+    <textarea style="resize: none;" name="comment" cols="55" rows="3"></textarea>
     <br>
     <input type="submit" name="comment_button" value="Add Comment">
 </form>

@@ -6,8 +6,10 @@ $array = new stdClass();
 if (!isset($_GET['token'])) {
     $array->response = 'API Key Required';
     echo json_encode($array);
+    exit();
 }
 
+if (isset($_GET['token'])) {
 $apiKey = htmlspecialchars($_GET['token']);
 $get = NULL;
 $result = NULL;
@@ -20,7 +22,7 @@ switch(true) {
         exit();
     break; 
 }
-
+}
 $username = $result['username'];
 
 

@@ -13,7 +13,7 @@
 					                    <tr valign="top">
                     <td style="border-right: 1px dashed #369; padding: 0px 10px 10px 10px; color: #444;" width="60%">
                     <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">My Account Overview</div>
-                    <strong>User Name</strong>: <a href="/profile.php?user=<?php echo htmlspecialchars($_SESSION['username']); ?>"><?php echo htmlspecialchars($_SESSION['username']); ?></a><br>
+                    <strong>User Name</strong>: <a href="/profile.php?u=<?php echo htmlspecialchars($_SESSION['username']); ?>"><?php echo htmlspecialchars($_SESSION['username']); ?></a><br>
                     </td>
                     <td style="padding: 0px 10px 10px 10px; color: #444;" width="40%">
                     <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">Things To Do</div>

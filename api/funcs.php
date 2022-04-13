@@ -23,4 +23,12 @@ function PostComment($username, $conn, $msg, $video_id, $date) {
     return $get;
 }
 
+function ReturnRVVideos($conn) {
+    global $get;
+    $rSQL = $conn->prepare("SELECT * FROM videos ORDER BY lastWatched DESC LIMIT 5");
+    $rSQL->execute();
+    $get = $rSQL->get_result();
+    return $get;
+}
+
 ?>

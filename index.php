@@ -6,9 +6,6 @@ include './libs/config/db_auth.php';
 // composer 
 require 'vendor/autoload.php';
 
-// composer dependencies
-use Carbon\Carbon;
-
 // start the session
 session_start();
 ?>

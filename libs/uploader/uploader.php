@@ -23,7 +23,7 @@ function delete_directory($dirname) {
      return true;
 }
 
-$url_id = rand(1, 1000);
+$url_id = randstr(10);
 $folder_id = randstr(26);
 $vid_id = randstr(26);
 

@@ -16,7 +16,7 @@ while ($row = mysqli_fetch_array($apiquery)) {
     $rr[$count] = array(
         'username' => htmlspecialchars($row['username']), 
         'recent_vid' => $row['recent_vid'],
-        'last_Login' => $row['lastLogin'], 
+        'lastLogin' => $row['lastLogin'], 
         'isBanned' =>  $row['isBanned'],
         'aboutme' => htmlspecialchars($row['aboutme']),
         'profile_link' => "http://" . $sitename . "/profile.php?u=" . htmlspecialchars($row['username'])
