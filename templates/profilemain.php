@@ -16,7 +16,7 @@ $lastlogon = htmlspecialchars($row['lastLogin']);
                     <div style="border: 1px solid #CCCCCC; padding: 15px 15px 30px 15px;">
                         <div style="font-size: 18px; font-weight: bold; color: #CC6633; margin-bottom: 2px;">Hello. I'm <?php echo $username; ?>.</div>
                         <div class="profileLabel">Last logon:</div><?php echo $lastlogon; ?><div class="profileLabel">About Me:</div>
-                        <?php echo $aboutme; ?>
+                        <?php echo htmlspecialchars($aboutme); ?>
                         <?php 
                         if (isset($_SESSION['username'])) {
                             if ($_SESSION['username'] == $username) {
