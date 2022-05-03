@@ -5,7 +5,7 @@ session_start();
 
 // set some stuff
 $user = $_SESSION['username'];
-$post_aboutme = htmlspecialchars($_POST['lol']);
+$post_aboutme = $_POST['lol'];
 
 // sql 
 $sql = "UPDATE users SET aboutme = '$post_aboutme' WHERE username = '$user'";
